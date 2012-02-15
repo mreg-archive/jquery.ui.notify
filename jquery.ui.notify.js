@@ -6,8 +6,49 @@
  * @requires jQuery
  * @author Hannes Forsgård <hannes.forsgard@gmail.com>
  */
+
+/**
+ * See (http://jquery.com/).
+ * @name jQuery
+ * @class 
+ * See the jQuery Library  (http://jquery.com/) for full details.  This just
+ * documents the function and classes that are added to jQuery by this plug-in.
+ */
+
 (function($){
     $.extend({
+
+        /**
+         * @desc Growl like notifications styled with themeroller
+         * @name jQuery.notify
+         * @function
+         * @param {obj} options
+         * <dl>
+         *  <dt>inEffect</dt>
+         *  <dd>In effect</dd>
+         *  <dt>outEffect</dt>
+         *  <dd>Out effect</dd>
+         *  <dt>effectTime</dt>
+         *  <dd>Effect duration in miliseconds</dd>
+         *  <dt>timeout</dt>
+         *  <dd>Timeout in miliseconds before item is removed</dd>
+         *  <dt>text</dt>
+         *  <dd>Item text</dd>
+         *  <dt>remove</dt>
+         *  <dd>Should item be removed after timeout</dd>
+         *  <dt>state</dt>
+         *  <dd>jquery-ui state (anything that makes a valid ui-state- class</dd>
+         *  <dt>icon</dt>
+         *  <dd>jquery-ui icon (anything that makes a vlid ui-icon- class</dd>
+         * </dl>
+         * @example
+         * $.notify({
+         *     text: 'Notification text',
+         *     remove: true,
+         *     timeout: 5000
+         * });
+         * @returns {jQuery}
+         */
         notify: function(options){
             // Apply standard settings
             options = $.extend({
