@@ -14,7 +14,7 @@
                 inEffect:   {opacity: 'show'},  // In effect
                 outEffect:  {opacity: '0'},     // Out effect
                 effectTime: 100,                // Effect duration in miliseconds
-                timeout:    5000,               // Timeout in miliseconds before item is removed
+                timeout:    10000,              // Timeout in miliseconds before item is removed
                 text:       '',                 // Item text
                 remove:     true,               // Should item be removed after timeout
                 state:      'highlight',        // jquery-ui state (anything that makes a valid ui-state- class
