@@ -39,8 +39,8 @@ Themeing
 
     $.notify({
         text: 'Notification text',
-        icon: 'alert',
-        state: 'error'
+        icon: 'ui-icon-alert',
+        state: 'ui-state-error'
     });
 
 Setting effects
