@@ -37,9 +37,9 @@
          *  <dt>remove</dt>
          *  <dd>Should item be removed after timeout</dd>
          *  <dt>state</dt>
-         *  <dd>jquery-ui state (anything that makes a valid ui-state- class</dd>
+         *  <dd>ui-state- class</dd>
          *  <dt>icon</dt>
-         *  <dd>jquery-ui icon (anything that makes a vlid ui-icon- class</dd>
+         *  <dd>ui-icon- class</dd>
          * </dl>
          * @example
          * $.notify({
@@ -58,21 +58,21 @@
                 timeout:    10000,              // Timeout in miliseconds before item is removed
                 text:       '',                 // Item text
                 remove:     true,               // Should item be removed after timeout
-                state:      'highlight',        // jquery-ui state (anything that makes a valid ui-state- class
-                icon:       'info',             // jquery-ui icon (anything that makes a vlid ui-icon- class
+                state:      'ui-state-highlight',        // jquery-ui state (anything that makes a valid ui-state- class
+                icon:       'ui-icon-info',     // jquery-ui icon (anything that makes a vlid ui-icon- class
             }, options);
 
             // Create item
             var $text = $('<p>').html(options.text);
             
             if ( options.icon ) {
-                var $icon = $('<span>').addClass('ui-icon ui-icon-' + options.icon);
+                var $icon = $('<span>').addClass('ui-icon ' + options.icon);
                 $text.prepend($icon);
             }
             
             var $item = $('<div>')
                 .hide()
-                .addClass('notify-item  ui-corner-all ui-state-' + options.state)
+                .addClass('notify-item  ui-corner-all ' + options.state)
                 .append($text)
                 .animate(options.inEffect, options.effectTime)
                 .click(function() {
