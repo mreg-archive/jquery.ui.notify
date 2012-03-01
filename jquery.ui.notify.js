@@ -88,23 +88,28 @@
                         });
                     });
                 })
-                .hover(function(){
-                    $(this).addClass('ui-state-disabled');
-                }, function(){
-                    $(this).removeClass('ui-state-disabled');
-                });
+                .hover(
+                    function(){
+                        $(this).addClass('ui-state-disabled');
+                    },
+                    function(){
+                        $(this).removeClass('ui-state-disabled');
+                    }
+                );
 
             // Append to wrapper
             $this.append($item);
 
             // Autoremove
             if ( options.remove ) {
-                setTimeout(function(){
-                    if ( $item && $item.click ) {
-                        $item.click();
-                    }
-                },
-                options.timeout);
+                setTimeout(
+                    function(){
+                        if ( $item && $item.click ) {
+                            $item.click();
+                        }
+                    },
+                    options.timeout
+                );
             }
         });
     }
