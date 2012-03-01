@@ -1,11 +1,11 @@
 jquery.ui.notify: growl like notifications styled with themeroller
-===================================================================
+==================================================================
 
 [https://github.com/itbrig/jquery.ui.notify](https://github.com/itbrig/jquery.ui.notify)
 
 Report issues: [https://github.com/itbrig/jquery.ui.notify/issues](https://github.com/itbrig/jquery.ui.notify/issues)
 
-Simple growl like notifications styled with themeroller classes.
+Simple growl like notifications styled with themeroller css classes.
 
 ## License
 
@@ -16,13 +16,13 @@ Licensed under the WTFPL (http://sam.zoy.org/wtfpl/)
 
 Simple notification
 
-    $.notify({
+    $('#notify-wrap').notify({
         text: 'Notification text'
     });
 
 Change duration
 
-    $.notify({
+    $('#notify-wrap').notify({
         text: 'Notification text',
         timeout: 1000
     });
@@ -30,14 +30,14 @@ Change duration
 
 Sticky
 
-    $.notify({
+    $('#notify-wrap').notify({
         text: 'Notification text',
         remove: false
     });
 
 Themeing
 
-    $.notify({
+    $('#notify-wrap').notify({
         text: 'Notification text',
         icon: 'ui-icon-alert',
         state: 'ui-state-error'
@@ -45,22 +45,9 @@ Themeing
 
 Setting effects
 
-    $.notify({
+    $('#notify-wrap').notify({
         text: 'Notification text',
         inEffect: {height: 'toggle'},
         outEffect: {width: '0'},
         effectTime: 200
     });
-
-Trigger notification remove
-
-    var $notice = $.notify({
-        text: 'Notification text',
-        remove: false
-    });
-    $notice.click();
-
-Removing all notifications
-
-    $('.notify-wrap .notify-item').click();
-

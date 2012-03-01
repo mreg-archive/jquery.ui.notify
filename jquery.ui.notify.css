@@ -1,24 +1,24 @@
-.notify-wrap {
+#notify-wrap {
     position: fixed;
-    top: 10px;
-    right: 20px;
+    top: .5em;
+    right: 2em;
     z-index: 9999;
     width: 300px;
 }
 
-* html .notify-wrap {
+/*
+* html #notify-wrap {
     position: absolute;
 }
+*/
  
 .notify-item {
-    padding: 2px 18px 2px 18px;
-    margin-bottom: 10px;
-    box-shadow: 3px 3px 5px #888;
+    padding: .2em 1em .2em 1em;
+    margin-bottom: .5em;
+    box-shadow: .1em .1em .3em #888;
 }
 
 .notify-item:hover {
-    border-width: 3px;
-    padding: 0 16px 0 16px;
     cursor: pointer!important;
 }
 
