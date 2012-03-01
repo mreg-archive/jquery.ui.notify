@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+
+<title>Notify</title>
+<link rel="stylesheet" href="jquery.ui.notify.css">
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.ui.notify.js"></script>
+
+</head>
+<body>
+
+<div id="notify-wrap"></div>
+<button onclick="$('#notify-wrap').notify({text: 'Some cool text'})">Notify</button>
+<button onclick="$('#notify-wrap').notify({text: 'Some cool error', state: 'ui-state-error', icon: 'ui-icon-alert'})">Notify error</button>
+
+</body>
+</html>
