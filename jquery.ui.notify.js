@@ -2,7 +2,7 @@
  * Copyright (c) 2012 Hannes Forsgård
  * Licensed under the WTFPL (http://sam.zoy.org/wtfpl/)
  * @fileOverview jquery.ui.notify: growl like notifications styled with themeroller
- * @version 1.0.0
+ * @version 1.2.1
  * @requires jQuery
  * @author Hannes Forsgård <hannes.forsgard@gmail.com>
  */
@@ -15,11 +15,19 @@
  * documents the function and classes that are added to jQuery by this plug-in.
  */
 
+/**
+ * See (http://jquery.com/).
+ * @name jQuery.fn
+ * @class 
+ * See the jQuery Library  (http://jquery.com/) for full details.  This just
+ * documents the function and classes that are added to jQuery by this plug-in.
+ */
+
 (function($){
 
     /**
      * @desc Growl like notifications styled with themeroller
-     * @name jQuery.notify
+     * @name jQuery.fn.notify
      * @function
      * @param {obj} options
      * <dl>
@@ -41,6 +49,8 @@
      *  <dd>ui-icon- class</dd>
      * </dl>
      * @see example.html
+     * @example
+     * $('#my-notification-wrapper').notify({text: 'foo'});
      */
     $.fn.notify = function(options){
         return this.each(function(){
