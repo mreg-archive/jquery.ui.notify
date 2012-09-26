@@ -1,9 +1,9 @@
 jquery.ui.notify: growl like notifications styled with themeroller
 ==================================================================
 
-[https://github.com/itbrig/jquery.ui.notify](https://github.com/itbrig/jquery.ui.notify)
+[https://github.com/itbz/jquery.ui.notify](https://github.com/itbz/jquery.ui.notify)
 
-Report issues: [https://github.com/itbrig/jquery.ui.notify/issues](https://github.com/itbrig/jquery.ui.notify/issues)
+Report issues: [https://github.com/itbz/jquery.ui.notify/issues](https://github.com/itbz/jquery.ui.notify/issues)
 
 Simple growl like notifications styled with themeroller css classes.
 
